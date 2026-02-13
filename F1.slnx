@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="F1.Lib/F1.Lib.csproj" />
+  <Project Path="F1.Teste/F1.Teste.csproj" Id="beeafb1c-4ac4-45a4-9c33-d9c15082101e" />
+  <Project Path="F1.API/F1.API.csproj" />
+</Solution>

@@ -1,0 +1,332 @@
+[
+  {
+    "ContainingType": "F1.API.Controllers.EquipeController",
+    "Method": "LerEquipes",
+    "RelativePath": "Equipes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.EquipeController",
+    "Method": "AdicionarEquipe",
+    "RelativePath": "Equipes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipeDTO",
+        "Type": "F1.API.Data.Dtos.EquipeDTO.CreateEquipeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.EquipeController",
+    "Method": "LerEquipePorId",
+    "RelativePath": "Equipes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.EquipeController",
+    "Method": "AtualizarEquipe",
+    "RelativePath": "Equipes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "equipeDTO",
+        "Type": "F1.API.Data.Dtos.EquipeDTO.UpdateEquipeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.EquipeController",
+    "Method": "AtualizarEquipeParcial",
+    "RelativePath": "Equipes/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.EquipeController",
+    "Method": "DeletarEquipe",
+    "RelativePath": "Equipes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.GpController",
+    "Method": "LerGPs",
+    "RelativePath": "GPs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[F1.API.Data.Dtos.GrandePremioDTO.ReadGpDTO, F1.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "F1.API.Controllers.GpController",
+    "Method": "AdicionarGP",
+    "RelativePath": "GPs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grandePremioDTO",
+        "Type": "F1.API.Data.Dtos.GrandePremioDTO.CreateGpDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.GpController",
+    "Method": "LerGPPorId",
+    "RelativePath": "GPs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.GpController",
+    "Method": "AtualizarGP",
+    "RelativePath": "GPs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "grandePremioDTO",
+        "Type": "F1.API.Data.Dtos.GrandePremioDTO.UpdateGpDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.GpController",
+    "Method": "AtualizarParteGP",
+    "RelativePath": "GPs/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.GpController",
+    "Method": "DeletarGP",
+    "RelativePath": "GPs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.PilotoController",
+    "Method": "LerPilotos",
+    "RelativePath": "Pilotos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[F1.API.Data.Dtos.PilotoDTO.ReadPilotoDTO, F1.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "F1.API.Controllers.PilotoController",
+    "Method": "AdicionarPiloto",
+    "RelativePath": "Pilotos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pilotoDTO",
+        "Type": "F1.API.Data.Dtos.PilotoDTO.CreatePilotoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.PilotoController",
+    "Method": "LerPilotoPorId",
+    "RelativePath": "Pilotos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.PilotoController",
+    "Method": "AtualizarPiloto",
+    "RelativePath": "Pilotos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pilotoDTO",
+        "Type": "F1.API.Data.Dtos.PilotoDTO.UpdatePilotoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.PilotoController",
+    "Method": "AtualizarPartePiloto",
+    "RelativePath": "Pilotos/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.PilotoController",
+    "Method": "DeletarPiloto",
+    "RelativePath": "Pilotos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F1.API.Controllers.RelatorioController",
+    "Method": "LerRelatorioGeral",
+    "RelativePath": "Relatorio/geral",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
