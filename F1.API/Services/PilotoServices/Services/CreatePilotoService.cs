@@ -25,7 +25,9 @@ public class CreatePilotoService : ICreatePilotoService
 
     public async Task<ReadPilotoDTO> AdicionarPilotoAsync([FromBody] CreatePilotoDTO pilotoDTO)
     {
-        bool pilotoJaExistente = await pilotoQuery.BuscarPorCampoAsync(p => p.Numero == pilotoDTO.Numero) != null;
+        bool pilotoJaExistente = await pilotoQuery.BuscarPorCampoAsync(
+            p => p.Numero == pilotoDTO.Numero) 
+            is not null;
 
         if (pilotoJaExistente) throw new InvalidOperationException($"Piloto com o número {pilotoDTO.Numero} já existente");
 

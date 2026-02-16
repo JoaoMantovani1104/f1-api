@@ -24,8 +24,9 @@ public class CreateEquipeService : ICreateEquipeService
 
     public async Task<ReadEquipeDTO> AdicionarEquipeAsync(CreateEquipeDTO equipeDTO)
     {
-        bool equipeJaExistente = await equipeQuery
-            .BuscarPorCampoAsync(e => e.Nome.ToUpper().Equals(equipeDTO.Nome.ToUpper())) != null;
+        bool equipeJaExistente = await equipeQuery.BuscarPorCampoAsync( 
+            e => EF.Functions.ILike(e.Nome, equipeDTO.Nome.Trim()))
+            is not null;
         
         if (equipeJaExistente) throw new InvalidOperationException($"Equipe com nome '{equipeDTO.Nome}' já existente.");
 

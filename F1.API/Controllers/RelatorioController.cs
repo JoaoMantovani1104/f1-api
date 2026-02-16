@@ -1,7 +1,5 @@
-﻿using F1.API.Data;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using F1.API.Services.Relatorio.Services;
+﻿using Microsoft.AspNetCore.Mvc;
+using F1.API.Services.Relatorio.Interfaces;
 
 namespace F1.API.Controllers;
 
@@ -9,19 +7,17 @@ namespace F1.API.Controllers;
 [Route("/Relatorio")]
 public class RelatorioController : ControllerBase
 {
-    private readonly F1Context context;
-    private readonly ReadRelatorioService serviceRead;
+    private readonly IReadRelatorioService serviceRead;
 
-    public RelatorioController(F1Context context, ReadRelatorioService serviceRead)
+    public RelatorioController(IReadRelatorioService serviceRead)
     {
-        this.context = context;
         this.serviceRead = serviceRead;
     }
 
     [HttpGet("geral")]
     public async Task<IActionResult> LerRelatorioGeral()
     {
-        var relatorio = serviceRead.LerRelatorioGeralAsync();
+        var relatorio = await serviceRead.LerRelatorioGeralAsync();
 
         return Ok(relatorio);
     }

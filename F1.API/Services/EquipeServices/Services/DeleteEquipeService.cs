@@ -23,7 +23,8 @@ public class DeleteEquipeService : IDeleteEquipeService
         if (equipeADeletar is null) return false;
 
         bool equipeComPilotosAssociados = await equipeQuery
-            .BuscarPorCampoAsync(e => e.Id == id && e.Pilotos.Any()) != null;
+            .BuscarPorCampoAsync(e => e.Id == id && e.Pilotos.Any())
+            is not null;
 
         if (equipeComPilotosAssociados)
             throw new InvalidOperationException("Não é possível deletar uma equipe que possui pilotos associados.");

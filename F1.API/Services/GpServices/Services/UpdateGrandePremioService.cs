@@ -4,6 +4,7 @@ using F1.Lib.Interfaces.Genericas;
 using F1.API.Data.Dtos.GrandePremioDTO;
 using F1.API.Services.GpServices.Interfaces;
 using F1.Lib.Interfaces.Especificas.Query;
+using Microsoft.EntityFrameworkCore;
 
 namespace F1.API.Services.GpServices.Services;
 
@@ -28,7 +29,8 @@ public class UpdateGrandePremioService : IUpdateGrandePremioService
         if (grandePremioAAtualizar == null) return false;
 
         bool grandePremioComMesmoNome = await grandePremioQuery.BuscarPorCampoAsync(
-                                    gp => gp.Nome.ToUpper().Equals(grandePremioAAtualizar.Nome.ToUpper())) != null;
+                                    gp => EF.Functions.ILike(gp.Nome, grandePremioDTO.Nome.Trim()))
+                                    is not null;
 
         if (grandePremioComMesmoNome)
             throw new InvalidOperationException($"Já existe outro Grande Prêmio cadastrado com o nome '{grandePremioDTO.Nome}'."); 

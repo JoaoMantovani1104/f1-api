@@ -4,6 +4,7 @@ using F1.API.Data.Dtos.EquipeDTO;
 using F1.Lib.Interfaces.Genericas;
 using F1.Lib.Interfaces.Especificas.Query;
 using F1.API.Services.EquipeServices.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace F1.API.Services.EquipeServices.Services;
 
@@ -27,13 +28,15 @@ public class UpdateEquipeService : IUpdateEquipeService
         if (equipeAAtualizar == null) return false;
 
         bool equipeComMesmoNome = await equipeQuery.BuscarPorCampoAsync(
-                                    gp => gp.Nome.ToUpper().Equals(equipeAAtualizar.Nome.ToUpper())) != null;
+                                    e => e.Id != id && 
+                                    EF.Functions.ILike(e.Nome, equipeDTO.Nome.Trim())) 
+                                    is not null;
 
         if (equipeComMesmoNome)
             throw new InvalidOperationException($"Já existe outra equipe cadastrada com o nome '{equipeDTO.Nome}'.");
     
         mapper.Map(equipeDTO, equipeAAtualizar);
 
-        return await equipeRepository.AtualizarAsync(equipeAAtualizar); ;
+        return await equipeRepository.AtualizarAsync(equipeAAtualizar); 
     }
 }

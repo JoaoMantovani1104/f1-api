@@ -21,6 +21,13 @@ public class PilotoQuery : QueryBase<Piloto>, IPilotoQuery
             .FirstOrDefaultAsync(p => p.Numero == numero);
     }
 
+    public async Task<double> ObterMediaIdade()
+    {
+        return await context.Set<Piloto>()
+            .AsNoTracking()
+            .AverageAsync(p => p.Idade);
+    }
+
     public async Task<Piloto?> ObterPilotoComMaisVitoriasAsync()
     {
         return await context.Set<Piloto>()

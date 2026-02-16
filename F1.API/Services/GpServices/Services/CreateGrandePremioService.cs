@@ -4,6 +4,7 @@ using F1.Lib.Interfaces.Genericas;
 using F1.API.Data.Dtos.GrandePremioDTO;
 using F1.Lib.Interfaces.Especificas.Query;
 using F1.API.Services.GpServices.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace F1.API.Services.GpServices.Services;
 
@@ -23,8 +24,9 @@ public class CreateGrandePremioService : ICreateGrandePremioService
 
     public async Task<ReadGpDTO> AdicionarGPAsync(CreateGpDTO grandePremioDTO)
     {
-        bool grandePremioJaExistente = await grandePremioQuery
-            .BuscarPorCampoAsync(gp => gp.Nome.ToUpper().Equals(grandePremioDTO.Nome.ToUpper())) != null;
+        bool grandePremioJaExistente = await grandePremioQuery.BuscarPorCampoAsync(
+            gp => EF.Functions.ILike(gp.Nome, grandePremioDTO.Nome.Trim()))
+            is not null;
 
         if (grandePremioJaExistente) throw new InvalidOperationException("Grande Prêmio já existente.");
 

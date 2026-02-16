@@ -17,9 +17,9 @@ public class QueryBase<T> : IQueryBase<T> where T : class
     {
         IQueryable<T> query = context.Set<T>().AsNoTracking();
 
-        if (includes != null)
+        if (includes.Length > 0)
         {
-            foreach (var include in includes)
+            foreach (var include in includes.Distinct())
             {
                 query = query.Include(include);
             }
@@ -28,13 +28,13 @@ public class QueryBase<T> : IQueryBase<T> where T : class
         return await query.FirstOrDefaultAsync(predicado);
     }
 
-    public async Task<IEnumerable<T>> ObterTodosAsync(params Expression<Func<T, object?>>[] includes)
+    public async Task<IEnumerable<T>?> ObterTodosAsync(params Expression<Func<T, object?>>[] includes)
     {
         IQueryable<T> query = context.Set<T>().AsNoTracking();
 
-        if (includes != null)
+        if (includes.Length > 0)
         {
-            foreach (var include in includes)
+            foreach (var include in includes.Distinct())
             {
                 query = query.Include(include);
             }

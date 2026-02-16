@@ -27,8 +27,9 @@ public class UpdatePilotoService : IUpdatePilotoService
 
         if (pilotoAAtualizar == null) return false;
 
-        bool pilotoComMesmoNumero = pilotoQuery
-            .BuscarPorCampoAsync(p => p.Numero == pilotoDTO.Numero) != null;
+        bool pilotoComMesmoNumero = await pilotoQuery.BuscarPorCampoAsync(
+            p => p.Numero == pilotoDTO.Numero) 
+            is not null;
 
         if (pilotoComMesmoNumero)
             throw new InvalidOperationException("Já existe um piloto com esse número.");

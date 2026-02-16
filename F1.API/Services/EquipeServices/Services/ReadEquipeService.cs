@@ -20,12 +20,12 @@ public class ReadEquipeService : IReadEquipeService
     {
         var equipe = await equipeQuery.BuscarPorCampoAsync(e => e.Id == id, e => e.Pilotos);
 
-        return equipe != null ?
+        return equipe is not null ?
             mapper.Map<ReadEquipeDTO>(equipe)
             : null;
     }
 
-    public async Task<IEnumerable<ReadEquipeDTO>> LerEquipesAsync()
+    public async Task<IEnumerable<ReadEquipeDTO>?> LerEquipesAsync()
     {
         var equipes = await equipeQuery.ObterTodosAsync(e => e.Pilotos);
 

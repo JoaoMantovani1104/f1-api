@@ -2,8 +2,10 @@ using F1.API.Data;
 using F1.Lib.Interfaces.Genericas;
 using Microsoft.EntityFrameworkCore;
 using F1.API.Data.Repositories.Genericos;
+using F1.API.Services.Relatorio.Services;
 using F1.API.Services.GpServices.Services;
 using F1.Lib.Interfaces.Especificas.Query;
+using F1.API.Services.Relatorio.Interfaces;
 using F1.API.Services.GpServices.Interfaces;
 using F1.API.Services.EquipeServices.Services;
 using F1.API.Services.PilotoServices.Services;
@@ -37,6 +39,8 @@ builder.Services.AddScoped<ICreatePilotoService, CreatePilotoService>();
 builder.Services.AddScoped<IReadPilotoService, ReadPilotoService>();
 builder.Services.AddScoped<IUpdatePilotoService, UpdatePilotoService>();
 builder.Services.AddScoped<IDeletePilotoService, DeletePilotoService>();
+
+builder.Services.AddScoped<IReadRelatorioService, ReadRelatorioService>();
 
 builder.Services.AddScoped(typeof(IQueryBase<>), typeof(QueryBase<>));
 builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
