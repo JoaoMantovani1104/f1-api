@@ -13,5 +13,9 @@ public class EquipeConfiguration : IEntityTypeConfiguration<Equipe>
         builder.Property(e => e.Nome)
             .IsRequired()
             .HasMaxLength(100);
+
+        builder.HasMany(e => e.Pilotos)
+            .WithOne(p => p.Equipe)
+            .HasForeignKey(p => p.EquipeId);
     }
 }

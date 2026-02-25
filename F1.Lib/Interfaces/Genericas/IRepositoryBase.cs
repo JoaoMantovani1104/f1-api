@@ -2,7 +2,7 @@
 
 public interface IRepositoryBase<T> where T : class
 {
-    Task<T> AdicionarAsync(T entity);
-    Task<bool> AtualizarAsync(T entity);
-    Task<bool> DeletarAsync(T entity);
+    Task AdicionarAsync(T entity);
+    void Atualizar(T entity);
+    void Deletar(T entity);
 }

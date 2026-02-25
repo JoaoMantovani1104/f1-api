@@ -6,5 +6,4 @@ namespace F1.Lib.Interfaces.Especificas.Query;
 public interface IEquipeQuery : IQueryBase<Equipe>
 {
     Task<bool> ExistemPilotosNaEquipeAsync(int equipeId);
-    Task<Equipe?> ObterEquipeComMaisVitoriasAsync();
 }

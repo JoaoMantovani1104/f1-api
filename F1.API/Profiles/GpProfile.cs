@@ -8,13 +8,19 @@ public class GpProfile : Profile
 {
     public GpProfile()
     {
-        CreateMap<CreateGpDTO, GrandePremio>();
-        CreateMap<UpdateGpDTO, GrandePremio>();
-
         CreateMap<GrandePremio, CreateGpDTO>();
         CreateMap<GrandePremio, UpdateGpDTO>();
+        CreateMap<ReadGpDTO, UpdateGpDTO>();
 
         CreateMap<GrandePremio, ReadGpDTO>()
             .ForMember(dest => dest.Vencedor, opt => opt.MapFrom(src => src.Vencedor.Nome));
+
+        CreateMap<CreateGpDTO, GrandePremio>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.Vencedor, opt => opt.Ignore()); 
+
+        CreateMap<UpdateGpDTO, GrandePremio>()
+            .ForMember(dest => dest.Id, opt => opt.Ignore())
+            .ForMember(dest => dest.Vencedor, opt => opt.Ignore());
     }
 }

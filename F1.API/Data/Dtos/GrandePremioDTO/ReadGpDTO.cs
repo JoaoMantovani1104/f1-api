@@ -1,6 +1,4 @@
-﻿using F1.Lib.Modelos;
-
-namespace F1.API.Data.Dtos.GrandePremioDTO;
+﻿namespace F1.API.Data.Dtos.GrandePremioDTO;
 
 public class ReadGpDTO
 {
@@ -9,5 +7,6 @@ public class ReadGpDTO
     public string Localizacao { get; set; }
     public int Voltas { get; set; }
     public int Ordem { get; set; }
+    public int? VencedorId { get; set; }
     public string Vencedor { get; set; }
 }

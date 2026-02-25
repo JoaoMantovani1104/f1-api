@@ -40,7 +40,9 @@ public class EquipeController : ControllerBase
     {
         var equipeBuscada = await serviceRead.LerEquipePorIdAsync(id);
 
-        return Ok(equipeBuscada);
+        if (equipeBuscada is null) return NotFound(); 
+        
+        return Ok(equipeBuscada); 
     }
 
     [HttpPost]
@@ -60,25 +62,41 @@ public class EquipeController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarEquipe(int id, [FromBody] UpdateEquipeDTO equipeDTO)
     {
-        var atualizadoComSucesso = await serviceUpdate.AtualizarEquipeAsync(id, equipeDTO);
+        try
+        {
+            var atualizadoComSucesso = await serviceUpdate.AtualizarEquipeAsync(id, equipeDTO);
 
-        if (!atualizadoComSucesso) return NotFound();
+            if (!atualizadoComSucesso) return NotFound();
 
-        return NoContent();
+            return NoContent();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message); 
+        }
     }
 
     [HttpPatch("{id}")]
     public async Task<IActionResult> AtualizarEquipeParcial(int id, [FromBody] JsonPatchDocument<UpdateEquipeDTO> patch)
     {
-        var equipeExistente = await serviceRead.LerEquipePorIdAsync(id);
-        if (equipeExistente is null) return NotFound();
+        try
+        {
+            var equipeExistente = await serviceRead.LerEquipePorIdAsync(id);
+            if (equipeExistente is null) return NotFound();
 
-        var equipeParaAtualizar = mapper.Map<UpdateEquipeDTO>(equipeExistente);
-        patch.ApplyTo(equipeParaAtualizar, ModelState);
+            var equipeParaAtualizar = mapper.Map<UpdateEquipeDTO>(equipeExistente);
+            patch.ApplyTo(equipeParaAtualizar, ModelState);
 
-        await serviceUpdate.AtualizarEquipeAsync(id, equipeParaAtualizar);
+            bool atualizadoComSucesso = await serviceUpdate.AtualizarEquipeAsync(id, equipeParaAtualizar);
 
-        return NoContent();
+            if (!atualizadoComSucesso) return NotFound();
+
+                return NoContent();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message); 
+        }
     }
 
     [HttpDelete("{id}")]
@@ -90,9 +108,9 @@ public class EquipeController : ControllerBase
             if (!equipeDeletadaComSucesso) return NotFound();
             return NoContent();
         }
-        catch (Exception ex)
+        catch (InvalidOperationException ex)
         {
-            return NotFound(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
 }

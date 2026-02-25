@@ -204,33 +204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ReadGpDTO"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ReadGpDTO"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ReadGpDTO"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -422,33 +396,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ReadPilotoDTO"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ReadPilotoDTO"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ReadPilotoDTO"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -655,7 +603,8 @@
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           }
         },
@@ -670,11 +619,13 @@
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           },
           "localizacao": {
-            "minLength": 1,
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string"
           },
           "voltas": {
@@ -703,7 +654,8 @@
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           },
           "numero": {
@@ -715,7 +667,8 @@
             "format": "int32"
           },
           "nacionalidade": {
-            "minLength": 1,
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string"
           },
           "equipeId": {
@@ -762,69 +715,6 @@
         "type": "integer",
         "format": "int32"
       },
-      "ReadGpDTO": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nome": {
-            "type": "string",
-            "nullable": true
-          },
-          "localizacao": {
-            "type": "string",
-            "nullable": true
-          },
-          "voltas": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "ordem": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "vencedor": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ReadPilotoDTO": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nome": {
-            "type": "string",
-            "nullable": true
-          },
-          "numero": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nacionalidade": {
-            "type": "string",
-            "nullable": true
-          },
-          "nomeEquipe": {
-            "type": "string",
-            "nullable": true
-          },
-          "gpsVencidos": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "UpdateEquipeDTO": {
         "required": [
           "nome"
@@ -832,7 +722,8 @@
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           }
         },
@@ -847,11 +738,13 @@
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           },
           "localizacao": {
-            "minLength": 1,
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string"
           },
           "voltas": {
@@ -880,7 +773,8 @@
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           },
           "numero": {
@@ -892,7 +786,8 @@
             "format": "int32"
           },
           "nacionalidade": {
-            "minLength": 1,
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string"
           },
           "equipeId": {

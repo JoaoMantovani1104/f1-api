@@ -2,16 +2,16 @@ using F1.API.Data;
 using F1.Lib.Interfaces.Genericas;
 using Microsoft.EntityFrameworkCore;
 using F1.API.Data.Repositories.Genericos;
-using F1.API.Services.Relatorio.Services;
 using F1.API.Services.GpServices.Services;
 using F1.Lib.Interfaces.Especificas.Query;
-using F1.API.Services.Relatorio.Interfaces;
 using F1.API.Services.GpServices.Interfaces;
 using F1.API.Services.EquipeServices.Services;
 using F1.API.Services.PilotoServices.Services;
 using F1.API.Services.EquipeServices.Interfaces;
 using F1.API.Services.PilotoServices.Interfaces;
 using F1.API.Data.Repositories.Especificos.Query;
+using F1.API.Services.RelatorioServices.Services;
+using F1.API.Services.RelatorioServices.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,6 +48,8 @@ builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
 builder.Services.AddScoped<IEquipeQuery, EquipeQuery>();
 builder.Services.AddScoped<IGrandePremioQuery, GrandePremioQuery>();
 builder.Services.AddScoped<IPilotoQuery, PilotoQuery>();
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

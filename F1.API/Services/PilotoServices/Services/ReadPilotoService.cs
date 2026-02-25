@@ -19,7 +19,7 @@ public class ReadPilotoService : IReadPilotoService
 
     public async Task<ReadPilotoDTO?> LerPilotoPorIdAsync(int id)
     {
-        var piloto = await pilotoQuery.BuscarPorCampoAsync(p => p.Id == id, [p => p.Equipe, p => p.GpsVencidos]);
+        var piloto = await pilotoQuery.BuscarPorPropriedadeAsync(p => p.Id == id, [p => p.Equipe, p => p.GpsVencidos]);
 
         return piloto != null ?
             mapper.Map<ReadPilotoDTO>(piloto)

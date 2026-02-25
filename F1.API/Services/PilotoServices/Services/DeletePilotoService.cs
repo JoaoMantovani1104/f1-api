@@ -9,19 +9,23 @@ public class DeletePilotoService : IDeletePilotoService
 {
     private readonly IPilotoQuery pilotoQuery;
     private readonly IRepositoryBase<Piloto> pilotoRepository;
+    private readonly IUnitOfWork unitOfWork;
 
-    public DeletePilotoService(IPilotoQuery pilotoQuery, IRepositoryBase<Piloto> pilotoRepository)
+    public DeletePilotoService(IPilotoQuery pilotoQuery, IRepositoryBase<Piloto> pilotoRepository, IUnitOfWork unitOfWork)
     {
         this.pilotoQuery = pilotoQuery;
         this.pilotoRepository = pilotoRepository;
+        this.unitOfWork = unitOfWork;
     }
 
     public async Task<bool> DeletarPilotoAsync(int id)
     {
-        var pilotoADeletar = await pilotoQuery.BuscarPorCampoAsync(p => p.Id == id);
+        var pilotoADeletar = await pilotoQuery.BuscarPorPropriedadeAsync(p => p.Id == id);
 
         if (pilotoADeletar == null) return false;
 
-        return await pilotoRepository.DeletarAsync(pilotoADeletar);
+        pilotoRepository.Deletar(pilotoADeletar);
+
+        return await unitOfWork.CommitAsync();
     }
 }

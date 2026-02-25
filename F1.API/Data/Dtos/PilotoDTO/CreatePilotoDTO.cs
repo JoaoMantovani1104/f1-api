@@ -1,11 +1,11 @@
-﻿using F1.Lib.Modelos;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace F1.API.Data.Dtos.PilotoDTO;
 
 public class CreatePilotoDTO
 {
     [Required]
+    [StringLength(100)]
     public string Nome { get; set; }
 
     [Required]
@@ -13,6 +13,7 @@ public class CreatePilotoDTO
     public int Idade { get; set; }
 
     [Required]
+    [StringLength(50)]
     public string Nacionalidade { get; set; }
 
     [Required]

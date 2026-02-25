@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
-using F1.API.Data;
-using Microsoft.EntityFrameworkCore;
 using F1.API.Data.Dtos.GrandePremioDTO;
-using F1.API.Services.GpServices.Interfaces;
 using F1.Lib.Interfaces.Especificas.Query;
+using F1.API.Services.GpServices.Interfaces;
 
 namespace F1.API.Services.GpServices.Services;
 
@@ -20,7 +18,7 @@ public class ReadGrandePremioService : IReadGrandePremioService
 
     public async Task<ReadGpDTO?> LerGPPorIdAsync(int id)
     {
-        var grandePremio = await grandePremioQuery.BuscarPorCampoAsync(gp => gp.Id == id, gp => gp.Vencedor);
+        var grandePremio = await grandePremioQuery.BuscarPorPropriedadeAsync(gp => gp.Id == id, gp => gp.Vencedor);
 
         return grandePremio != null ?
             mapper.Map<ReadGpDTO>(grandePremio)

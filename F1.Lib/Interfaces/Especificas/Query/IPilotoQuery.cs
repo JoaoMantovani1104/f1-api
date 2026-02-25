@@ -5,7 +5,6 @@ namespace F1.Lib.Interfaces.Especificas.Query;
 
 public interface IPilotoQuery : IQueryBase<Piloto>
 {
-    Task<Piloto?> ExistePilotoComNumeroAsync(int numero);
-    Task<Piloto?> ObterPilotoComMaisVitoriasAsync();
+    Task<bool> ExistePilotoComNumeroAsync(int numero);
     Task<double> ObterMediaIdade();
 }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using F1.API.Services.Relatorio.Interfaces;
+using F1.API.Services.RelatorioServices.Interfaces;
 
 namespace F1.API.Controllers;
 

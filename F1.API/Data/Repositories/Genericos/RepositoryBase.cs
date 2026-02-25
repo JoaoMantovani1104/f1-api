@@ -4,36 +4,25 @@ namespace F1.API.Data.Repositories.Genericos;
 
 public class RepositoryBase<T> : IRepositoryBase<T> where T : class
 {
-    private readonly F1Context context;
+    protected readonly F1Context context;
+
     public RepositoryBase(F1Context context)
     {
         this.context = context;
     }
 
-    public async Task<T> AdicionarAsync(T entity)
+    public async Task AdicionarAsync(T entity)
     {
-        var adicao = context.Set<T>().Add(entity);
-
-        await context.SaveChangesAsync();
-
-        return adicao.Entity;
+        await context.Set<T>().AddAsync(entity);
     }
 
-    public async Task<bool> AtualizarAsync(T entity)
+    public void Atualizar(T entity)
     {
-        var atualizacao = context.Set<T>().Update(entity);
-
-        int linhasAfetadas = await context.SaveChangesAsync();
-
-        return linhasAfetadas > 0;
+        context.Set<T>().Update(entity);
     }
 
-    public async Task<bool> DeletarAsync(T entity)
+    public void Deletar(T entity)
     {
-        var delecao = context.Set<T>().Remove(entity);
-
-        int linhasAfetadas = await context.SaveChangesAsync();
-
-        return linhasAfetadas > 0;
+        context.Set<T>().Remove(entity);
     }
 }

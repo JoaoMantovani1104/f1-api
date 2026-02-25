@@ -28,17 +28,19 @@ public class PilotoController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IEnumerable<ReadPilotoDTO>> LerPilotos()
+    public async Task<IActionResult> LerPilotos()
     {
         var pilotos = await serviceRead.LerPilotosAsync();
 
-        return pilotos;
+        return Ok(pilotos);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> LerPilotoPorId(int id)
     {
         var piloto = await serviceRead.LerPilotoPorIdAsync(id);
+
+        if (piloto is null) return NotFound();
 
         return Ok(piloto);
     }
@@ -60,42 +62,51 @@ public class PilotoController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarPiloto(int id, [FromBody] UpdatePilotoDTO pilotoDTO)
     {
-        bool pilotoAtualizadoComSucesso = await serviceUpdate.AtualizarPilotoAsync(id, pilotoDTO);
+        try
+        {
+            bool pilotoAtualizadoComSucesso = await serviceUpdate.AtualizarPilotoAsync(id, pilotoDTO);
 
-        if(!pilotoAtualizadoComSucesso) return NotFound();
+            if (!pilotoAtualizadoComSucesso) return NotFound();
 
-        return NoContent();
+            return NoContent();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
 
     [HttpPatch("{id}")]
-    public async Task<IActionResult> AtualizarPartePiloto(int id, JsonPatchDocument<Piloto> patch)
+    public async Task<IActionResult> AtualizarPartePiloto(int id, [FromBody] JsonPatchDocument<UpdatePilotoDTO> patch)
     {
-        var pilotoExistente = await serviceRead.LerPilotoPorIdAsync(id);
+        try
+        {
+            var pilotoExistente = await serviceRead.LerPilotoPorIdAsync(id);
 
-        if (pilotoExistente is null) return NotFound();
+            if (pilotoExistente is null) return NotFound();
 
-        var pilotoParaAtualizar = mapper.Map<Piloto>(pilotoExistente);
-        patch.ApplyTo(pilotoParaAtualizar, ModelState);
+            var pilotoParaAtualizar = mapper.Map<UpdatePilotoDTO>(pilotoExistente);
+            patch.ApplyTo(pilotoParaAtualizar, ModelState);
 
-        await serviceUpdate.AtualizarPilotoAsync(id, mapper.Map<UpdatePilotoDTO>(pilotoParaAtualizar));
+            bool atualizadoComSucesso = await serviceUpdate.AtualizarPilotoAsync(id, pilotoParaAtualizar);
 
-        return NoContent();
+            if (!atualizadoComSucesso) return NotFound();
+
+            return NoContent();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeletarPiloto(int id)
     {
-        try
-        {
-            var pilotoDeletadoComSucesso = await serviceDelete.DeletarPilotoAsync(id);
+        var pilotoDeletadoComSucesso = await serviceDelete.DeletarPilotoAsync(id);
 
-            if (!pilotoDeletadoComSucesso) return NotFound();
+        if (!pilotoDeletadoComSucesso) return NotFound();
 
-            return NoContent();
-        }
-        catch (Exception ex)
-        {
-            return NotFound(ex.Message);
-        }
+        return NoContent();
     }
 }

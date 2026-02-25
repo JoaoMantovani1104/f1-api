@@ -7,32 +7,23 @@ namespace F1.API.Data.Repositories.Especificos.Query;
 
 public class PilotoQuery : QueryBase<Piloto>, IPilotoQuery
 {
-    private readonly F1Context context;
+    public PilotoQuery(F1Context context) : base(context) { }
 
-    public PilotoQuery(F1Context context) : base(context)
-    {
-        this.context = context;
-    }
-
-    public async Task<Piloto?> ExistePilotoComNumeroAsync(int numero)
+    public async Task<bool> ExistePilotoComNumeroAsync(int numero)
     {
         return await context.Set<Piloto>()
             .AsNoTracking()
-            .FirstOrDefaultAsync(p => p.Numero == numero);
+            .AnyAsync(p => p.Numero == numero);
     }
 
     public async Task<double> ObterMediaIdade()
     {
+        var possuiPilotos = await context.Set<Piloto>().AnyAsync();
+
+        if (!possuiPilotos) return 0;
+
         return await context.Set<Piloto>()
             .AsNoTracking()
             .AverageAsync(p => p.Idade);
-    }
-
-    public async Task<Piloto?> ObterPilotoComMaisVitoriasAsync()
-    {
-        return await context.Set<Piloto>()
-            .AsNoTracking()
-            .OrderByDescending(p => p.GpsVencidos.Count)
-            .FirstOrDefaultAsync();
     }
 }

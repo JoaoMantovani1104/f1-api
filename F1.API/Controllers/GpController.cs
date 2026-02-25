@@ -27,17 +27,19 @@ public class GpController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IEnumerable<ReadGpDTO>> LerGPs()
+    public async Task<IActionResult> LerGPs()
     {
         var listaGrandesPremios = await serviceRead.LerGPsAsync();
 
-        return listaGrandesPremios;
+        return Ok(listaGrandesPremios);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> LerGPPorId(int id)
     {
         var grandePremio = await serviceRead.LerGPPorIdAsync(id);
+
+        if (grandePremio is null) return NotFound();
 
         return Ok(grandePremio);
     }
@@ -60,26 +62,42 @@ public class GpController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarGP(int id, [FromBody] UpdateGpDTO grandePremioDTO)
     {
-        bool grandePremioAtualizadoComSucesso = await serviceUpdate.AtualizarGPAsync(id, grandePremioDTO);
+        try
+        {
+            bool grandePremioAtualizadoComSucesso = await serviceUpdate.AtualizarGPAsync(id, grandePremioDTO);
 
-        if (!grandePremioAtualizadoComSucesso) return NotFound();
+            if (!grandePremioAtualizadoComSucesso) return NotFound();
 
-        return NoContent();
+            return NoContent();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
 
     [HttpPatch("{id}")]
     public async Task<IActionResult> AtualizarParteGP(int id, [FromBody] JsonPatchDocument<UpdateGpDTO> patch)
     {
-        var gpExistente = await serviceRead.LerGPPorIdAsync(id);
+        try
+        {    
+            var gpExistente = await serviceRead.LerGPPorIdAsync(id);
 
-        if (gpExistente is null) return NotFound();
+            if (gpExistente is null) return NotFound();
 
-        var gpParaAtualizar = mapper.Map<UpdateGpDTO>(gpExistente);
-        patch.ApplyTo(gpParaAtualizar, ModelState);
+            var gpParaAtualizar = mapper.Map<UpdateGpDTO>(gpExistente);
+            patch.ApplyTo(gpParaAtualizar, ModelState);
 
-        await serviceUpdate.AtualizarGPAsync(id, gpParaAtualizar);
+            bool atualizadoComSucesso = await serviceUpdate.AtualizarGPAsync(id, gpParaAtualizar);
 
-        return NoContent();
+            if (!atualizadoComSucesso) return NotFound();
+
+            return NoContent();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
 
     [HttpDelete("{id}")]
@@ -93,9 +111,9 @@ public class GpController : ControllerBase
 
             return NoContent();
         }
-        catch (Exception ex)
+        catch (InvalidOperationException ex)
         {
-            return NotFound(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
 }

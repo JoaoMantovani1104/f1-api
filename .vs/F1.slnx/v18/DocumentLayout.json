@@ -1,7 +1,112 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\controllers\\equipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\controllers\\equipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\controllerstests\\equipecontrollertests\\equipecontrollerdeletetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\controllerstests\\equipecontrollertests\\equipecontrollerdeletetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\servicestests\\equipeservices\\createequipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\servicestests\\equipeservices\\createequipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\servicestests\\equipeservices\\baseequipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\servicestests\\equipeservices\\baseequipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\autofixture\\automoqdataattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\autofixture\\automoqdataattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\bogus\\pilotofaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\bogus\\pilotofaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\bogus\\equipedtofaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\bogus\\equipedtofaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\services\\relatorioservices\\services\\readrelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\services\\relatorioservices\\services\\readrelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\services\\equipeservices\\services\\updateequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\services\\equipeservices\\services\\updateequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\services\\equipeservices\\services\\readequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\services\\equipeservices\\services\\readequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\services\\equipeservices\\services\\deleteequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\services\\equipeservices\\services\\deleteequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\services\\equipeservices\\services\\createequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\services\\equipeservices\\services\\createequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\data\\repositories\\especificos\\query\\pilotoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\data\\repositories\\especificos\\query\\pilotoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\data\\repositories\\especificos\\query\\grandepremioquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\data\\repositories\\especificos\\query\\grandepremioquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\data\\repositories\\especificos\\query\\equipequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\data\\repositories\\especificos\\query\\equipequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\data\\repositories\\genericos\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\data\\repositories\\genericos\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\data\\repositories\\genericos\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\data\\repositories\\genericos\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\data\\repositories\\genericos\\querybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\data\\repositories\\genericos\\querybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.lib\\interfaces\\especificas\\query\\ipilotoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|solutionrelative:f1.lib\\interfaces\\especificas\\query\\ipilotoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.lib\\interfaces\\especificas\\query\\igrandepremioquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|solutionrelative:f1.lib\\interfaces\\especificas\\query\\igrandepremioquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.lib\\interfaces\\especificas\\query\\iequipequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|solutionrelative:f1.lib\\interfaces\\especificas\\query\\iequipequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.lib\\interfaces\\genericas\\iquerybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|solutionrelative:f1.lib\\interfaces\\genericas\\iquerybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.lib\\interfaces\\genericas\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|solutionrelative:f1.lib\\interfaces\\genericas\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.lib\\interfaces\\genericas\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03F287-A4D4-5B76-FC94-7EB81BC84B43}|F1.Lib\\F1.Lib.csproj|solutionrelative:f1.lib\\interfaces\\genericas\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.teste\\servicestests\\relatorioservices\\readrelatorioservicestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEAFB1C-4AC4-45A4-9C33-D9C15082101E}|F1.Teste\\F1.Teste.csproj|solutionrelative:f1.teste\\servicestests\\relatorioservices\\readrelatorioservicestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|c:\\users\\joao.mantovani\\desktop\\joao.mantovani\\backend\\dotnet\\desafio-02-api\\f1.api\\services\\pilotoservices\\services\\createpilotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D9F599-78D5-20D8-0AF9-A63024EEA2E0}|F1.API\\F1.API.csproj|solutionrelative:f1.api\\services\\pilotoservices\\services\\createpilotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +114,349 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EquipeController.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Controllers\\EquipeController.cs",
+              "RelativeDocumentMoniker": "F1.API\\Controllers\\EquipeController.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Controllers\\EquipeController.cs",
+              "RelativeToolTip": "F1.API\\Controllers\\EquipeController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:28:50.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EquipeControllerDeleteTests.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ControllersTests\\EquipeControllerTests\\EquipeControllerDeleteTests.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\ControllersTests\\EquipeControllerTests\\EquipeControllerDeleteTests.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ControllersTests\\EquipeControllerTests\\EquipeControllerDeleteTests.cs",
+              "RelativeToolTip": "F1.Teste\\ControllersTests\\EquipeControllerTests\\EquipeControllerDeleteTests.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:27:38.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoMoqDataAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\AutoFixture\\AutoMoqDataAttribute.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\AutoFixture\\AutoMoqDataAttribute.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\AutoFixture\\AutoMoqDataAttribute.cs",
+              "RelativeToolTip": "F1.Teste\\AutoFixture\\AutoMoqDataAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:24:34.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PilotoFaker.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\Bogus\\PilotoFaker.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\Bogus\\PilotoFaker.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\Bogus\\PilotoFaker.cs",
+              "RelativeToolTip": "F1.Teste\\Bogus\\PilotoFaker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:24:00.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EquipeDTOFaker.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\Bogus\\EquipeDTOFaker.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\Bogus\\EquipeDTOFaker.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\Bogus\\EquipeDTOFaker.cs",
+              "RelativeToolTip": "F1.Teste\\Bogus\\EquipeDTOFaker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:23:30.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateEquipeService.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\UpdateEquipeService.cs",
+              "RelativeDocumentMoniker": "F1.API\\Services\\EquipeServices\\Services\\UpdateEquipeService.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\UpdateEquipeService.cs",
+              "RelativeToolTip": "F1.API\\Services\\EquipeServices\\Services\\UpdateEquipeService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:22:44.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReadEquipeService.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\ReadEquipeService.cs",
+              "RelativeDocumentMoniker": "F1.API\\Services\\EquipeServices\\Services\\ReadEquipeService.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\ReadEquipeService.cs",
+              "RelativeToolTip": "F1.API\\Services\\EquipeServices\\Services\\ReadEquipeService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:22:37.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeleteEquipeService.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\DeleteEquipeService.cs",
+              "RelativeDocumentMoniker": "F1.API\\Services\\EquipeServices\\Services\\DeleteEquipeService.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\DeleteEquipeService.cs",
+              "RelativeToolTip": "F1.API\\Services\\EquipeServices\\Services\\DeleteEquipeService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:22:09.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEquipeServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ServicesTests\\EquipeServices\\BaseEquipeServiceTests.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\ServicesTests\\EquipeServices\\BaseEquipeServiceTests.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ServicesTests\\EquipeServices\\BaseEquipeServiceTests.cs",
+              "RelativeToolTip": "F1.Teste\\ServicesTests\\EquipeServices\\BaseEquipeServiceTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:45:40.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateEquipeServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ServicesTests\\EquipeServices\\CreateEquipeServiceTests.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\ServicesTests\\EquipeServices\\CreateEquipeServiceTests.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ServicesTests\\EquipeServices\\CreateEquipeServiceTests.cs",
+              "RelativeToolTip": "F1.Teste\\ServicesTests\\EquipeServices\\CreateEquipeServiceTests.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowD0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:45:40.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateEquipeService.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\CreateEquipeService.cs",
+              "RelativeDocumentMoniker": "F1.API\\Services\\EquipeServices\\Services\\CreateEquipeService.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\EquipeServices\\Services\\CreateEquipeService.cs",
+              "RelativeToolTip": "F1.API\\Services\\EquipeServices\\Services\\CreateEquipeService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:21:38.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Genericos\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "F1.API\\Data\\Repositories\\Genericos\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Genericos\\UnitOfWork.cs",
+              "RelativeToolTip": "F1.API\\Data\\Repositories\\Genericos\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:20:44.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPilotoQuery.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Especificas\\Query\\IPilotoQuery.cs",
+              "RelativeDocumentMoniker": "F1.Lib\\Interfaces\\Especificas\\Query\\IPilotoQuery.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Especificas\\Query\\IPilotoQuery.cs",
+              "RelativeToolTip": "F1.Lib\\Interfaces\\Especificas\\Query\\IPilotoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:19:12.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IGrandePremioQuery.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Especificas\\Query\\IGrandePremioQuery.cs",
+              "RelativeDocumentMoniker": "F1.Lib\\Interfaces\\Especificas\\Query\\IGrandePremioQuery.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Especificas\\Query\\IGrandePremioQuery.cs",
+              "RelativeToolTip": "F1.Lib\\Interfaces\\Especificas\\Query\\IGrandePremioQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:18:59.667Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReadRelatorioService.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\RelatorioServices\\Services\\ReadRelatorioService.cs",
+              "RelativeDocumentMoniker": "F1.API\\Services\\RelatorioServices\\Services\\ReadRelatorioService.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\RelatorioServices\\Services\\ReadRelatorioService.cs",
+              "RelativeToolTip": "F1.API\\Services\\RelatorioServices\\Services\\ReadRelatorioService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:38:37.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IEquipeQuery.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Especificas\\Query\\IEquipeQuery.cs",
+              "RelativeDocumentMoniker": "F1.Lib\\Interfaces\\Especificas\\Query\\IEquipeQuery.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Especificas\\Query\\IEquipeQuery.cs",
+              "RelativeToolTip": "F1.Lib\\Interfaces\\Especificas\\Query\\IEquipeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:18:54.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IQueryBase.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Genericas\\IQueryBase.cs",
+              "RelativeDocumentMoniker": "F1.Lib\\Interfaces\\Genericas\\IQueryBase.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Genericas\\IQueryBase.cs",
+              "RelativeToolTip": "F1.Lib\\Interfaces\\Genericas\\IQueryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:18:04.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QueryBase.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Genericos\\QueryBase.cs",
+              "RelativeDocumentMoniker": "F1.API\\Data\\Repositories\\Genericos\\QueryBase.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Genericos\\QueryBase.cs",
+              "RelativeToolTip": "F1.API\\Data\\Repositories\\Genericos\\QueryBase.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:40:27.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EquipeQuery.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Especificos\\Query\\EquipeQuery.cs",
+              "RelativeDocumentMoniker": "F1.API\\Data\\Repositories\\Especificos\\Query\\EquipeQuery.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Especificos\\Query\\EquipeQuery.cs",
+              "RelativeToolTip": "F1.API\\Data\\Repositories\\Especificos\\Query\\EquipeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:40:19.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GrandePremioQuery.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Especificos\\Query\\GrandePremioQuery.cs",
+              "RelativeDocumentMoniker": "F1.API\\Data\\Repositories\\Especificos\\Query\\GrandePremioQuery.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Especificos\\Query\\GrandePremioQuery.cs",
+              "RelativeToolTip": "F1.API\\Data\\Repositories\\Especificos\\Query\\GrandePremioQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:40:23.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PilotoQuery.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Especificos\\Query\\PilotoQuery.cs",
+              "RelativeDocumentMoniker": "F1.API\\Data\\Repositories\\Especificos\\Query\\PilotoQuery.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Especificos\\Query\\PilotoQuery.cs",
+              "RelativeToolTip": "F1.API\\Data\\Repositories\\Especificos\\Query\\PilotoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:40:25.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Genericas\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "F1.Lib\\Interfaces\\Genericas\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Genericas\\IUnitOfWork.cs",
+              "RelativeToolTip": "F1.Lib\\Interfaces\\Genericas\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:18:08.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Genericas\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "F1.Lib\\Interfaces\\Genericas\\IRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Lib\\Interfaces\\Genericas\\IRepositoryBase.cs",
+              "RelativeToolTip": "F1.Lib\\Interfaces\\Genericas\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T18:18:06.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Genericos\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "F1.API\\Data\\Repositories\\Genericos\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Data\\Repositories\\Genericos\\RepositoryBase.cs",
+              "RelativeToolTip": "F1.API\\Data\\Repositories\\Genericos\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:42:10.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ReadRelatorioServicesTests.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ServicesTests\\RelatorioServices\\ReadRelatorioServicesTests.cs",
+              "RelativeDocumentMoniker": "F1.Teste\\ServicesTests\\RelatorioServices\\ReadRelatorioServicesTests.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.Teste\\ServicesTests\\RelatorioServices\\ReadRelatorioServicesTests.cs",
+              "RelativeToolTip": "F1.Teste\\ServicesTests\\RelatorioServices\\ReadRelatorioServicesTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:42:28.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreatePilotoService.cs",
+              "DocumentMoniker": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\PilotoServices\\Services\\CreatePilotoService.cs",
+              "RelativeDocumentMoniker": "F1.API\\Services\\PilotoServices\\Services\\CreatePilotoService.cs",
+              "ToolTip": "C:\\Users\\joao.mantovani\\Desktop\\joao.mantovani\\Backend\\dotnet\\desafio-02-api\\F1.API\\Services\\PilotoServices\\Services\\CreatePilotoService.cs",
+              "RelativeToolTip": "F1.API\\Services\\PilotoServices\\Services\\CreatePilotoService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:40:47.455Z",
+              "EditorCaption": ""
             }
           ]
         }

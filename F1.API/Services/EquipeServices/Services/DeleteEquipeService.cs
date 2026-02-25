@@ -9,26 +9,28 @@ public class DeleteEquipeService : IDeleteEquipeService
 {
     private readonly IEquipeQuery equipeQuery;
     private readonly IRepositoryBase<Equipe> equipeRepository;
+    private readonly IUnitOfWork unitOfWork;
 
-    public DeleteEquipeService(IEquipeQuery equipeQuery, IRepositoryBase<Equipe> equipeRepository)
+    public DeleteEquipeService(IEquipeQuery equipeQuery, IRepositoryBase<Equipe> equipeRepository, IUnitOfWork unitOfWork)
     {
         this.equipeQuery = equipeQuery;
         this.equipeRepository = equipeRepository;
+        this.unitOfWork = unitOfWork;
     }
 
     public async Task<bool> DeletarEquipeAsync(int id)
     {
-        var equipeADeletar = await equipeQuery.BuscarPorCampoAsync(e => e.Id == id);
+        var equipeADeletar = await equipeQuery.BuscarPorPropriedadeAsync(
+            e => e.Id == id, 
+            e => e.Pilotos);
 
         if (equipeADeletar is null) return false;
 
-        bool equipeComPilotosAssociados = await equipeQuery
-            .BuscarPorCampoAsync(e => e.Id == id && e.Pilotos.Any())
-            is not null;
-
-        if (equipeComPilotosAssociados)
+        if (equipeADeletar.Pilotos is not null && equipeADeletar.Pilotos.Any())
             throw new InvalidOperationException("Não é possível deletar uma equipe que possui pilotos associados.");
 
-        return await equipeRepository.DeletarAsync(equipeADeletar); 
+        equipeRepository.Deletar(equipeADeletar);
+
+        return await unitOfWork.CommitAsync();
     }
 }

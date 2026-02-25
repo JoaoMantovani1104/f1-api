@@ -18,14 +18,14 @@ public class ReadEquipeService : IReadEquipeService
 
     public async Task<ReadEquipeDTO?> LerEquipePorIdAsync(int id)
     {
-        var equipe = await equipeQuery.BuscarPorCampoAsync(e => e.Id == id, e => e.Pilotos);
+        var equipe = await equipeQuery.BuscarPorPropriedadeAsync(e => e.Id == id, e => e.Pilotos);
 
         return equipe is not null ?
             mapper.Map<ReadEquipeDTO>(equipe)
             : null;
     }
 
-    public async Task<IEnumerable<ReadEquipeDTO>?> LerEquipesAsync()
+    public async Task<IEnumerable<ReadEquipeDTO>> LerEquipesAsync()
     {
         var equipes = await equipeQuery.ObterTodosAsync(e => e.Pilotos);
 
